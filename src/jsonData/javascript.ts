@@ -23,6 +23,12 @@ const cardDataJs = [
     description: "",
     cta: "Explore",
   },
+  {
+    id: 5,
+    title: "Closures",
+    description: "",
+    cta: "Explore",
+  },
 ];
 
 const topicWiseDataJs = [
@@ -159,6 +165,37 @@ console.log(originalArray) // [1,2,3,6,45,8,9,30,5]`.trim(),
   const forEachArray = originalArray.myForEach((ele,_)=>{console.log(ele+1)}) // here forEach is custom javascript code
   console.log(forEachArray); // output undefined
   console.log(originalArray) // [1,2,3,6,45,8,9,30,5]`.trim(),
+      },
+      {
+        title: "Closer",
+        description:
+          "closure is a feature where an inner function has access to variables from an outer function's scope—even after the outer function has returned.",
+        code: `// {
+  
+function outer(){
+    var a= 5
+    return ()=>{
+        console.log(a)
+    }
+} outer()()`.trim(),
+      },
+    ],
+  },
+  {
+    id: 5,
+    content: [
+      {
+        title: "Closer",
+        description:
+          "Closure is a feature where an inner function has access to variables from an outer function's scope—even after the outer function has returned.",
+        code: `// { >>>>>>>>>>>>>>
+  
+function outer(){
+    var a= 5
+    return ()=>{
+        console.log(a)
+    }
+} outer()()`.trim(),
       },
     ],
   },
